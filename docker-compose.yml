@@ -30,8 +30,6 @@ services:
       args:
         TYPE: own
         MODE: prod
-    volumes:
-      - ./letsencrypt:/etc/letsencrypt
     depends_on:
       - hhvm
     ports:
