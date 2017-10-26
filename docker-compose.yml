@@ -30,8 +30,6 @@ services:
       args:
         TYPE: own
         MODE: prod
-        KEY: "/home/ec2-user/privkey.pem"
-        CRT: "/home/ec2-user/fullchain.pem"
     depends_on:
       - hhvm
     ports:
