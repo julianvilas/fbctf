@@ -182,7 +182,8 @@ function install_nginx() {
         self_signed_cert "$__cert" "$__key"
       ;;
       own)
-        own_cert "$__cert" "$__key"
+        #own_cert "$__cert" "$__key"
+        ok_log "Using CRT $__cert and KEY $__key"
       ;;
       certbot)
         if [[ "$__docker" = true ]]; then

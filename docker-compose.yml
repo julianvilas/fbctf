@@ -32,6 +32,8 @@ services:
         MODE: prod
     depends_on:
       - hhvm
+    volumes:
+      - certs:/etc/nginx/certs
     ports:
       - "80:80"
       - "443:443"
