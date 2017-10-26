@@ -33,7 +33,7 @@ services:
     depends_on:
       - hhvm
     volumes:
-      - certs:/etc/nginx/certs
+      - ./certs:/etc/nginx/certs
     ports:
       - "80:80"
       - "443:443"
