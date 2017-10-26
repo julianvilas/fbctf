@@ -318,7 +318,7 @@ fi
         run_grunt "$CTF_PATH" "$MODE"
 
         log "Installing nginx and certificates"
-        install_nginx "$CTF_PATH" "$MODE" "$TYPE" "$EMAIL" "$DOMAIN" "$DOCKER" "$MULTIPLE_SERVERS" "$HHVM_SERVER" "$CERTFILE" "$KEYFILE"
+        install_nginx "$CTF_PATH" "$MODE" "$TYPE" "$EMAIL" "$DOMAIN" "$DOCKER" "$MULTIPLE_SERVERS" "$HHVM_SERVER"
 
         log "Installing unison 2.48.3. Remember to install the same version on your host machine"
         package xz-utils

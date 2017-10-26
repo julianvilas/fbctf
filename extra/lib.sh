@@ -148,11 +148,11 @@ EOF
 function own_cert() {
   local __owncert=$1
   local __ownkey=$2
-  local __srccrt=$3
-  local __srckey=$4
 
-  sudo cp "$__srccrt" "$__owncert"
-  sudo cp "$__srckey" "$__ownkey"
+  read -p ' -> SSL Certificate file location? ' __mycert
+  read -p ' -> SSL Key Certificate file location? ' __mykey
+  sudo cp "$__mycert" "$__owncert"
+  sudo cp "$__mykey" "$__ownkey"
 }
 
 function install_nginx() {
@@ -164,8 +164,6 @@ function install_nginx() {
   local __docker=$6
   local __multiservers=$7
   local __hhvmserver=$8
-  local __srccrt=$9
-  local __srckey=$10
 
   local __certs_path="/etc/nginx/certs"
 
@@ -184,7 +182,7 @@ function install_nginx() {
         self_signed_cert "$__cert" "$__key"
       ;;
       own)
-        own_cert "$__cert" "$__key" "$__srccrt" "$__srckey"
+        own_cert "$__cert" "$__key"
       ;;
       certbot)
         if [[ "$__docker" = true ]]; then
