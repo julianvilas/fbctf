@@ -47,8 +47,8 @@ set -e
 
 DB="fbctf"
 U="ctf"
-P="{{ decrypt "AQICAHhGhwWaL8vVrUnwqYkZd/cMaHaWzqyjn0L7eotBenOeSAFL5iZ+pFpi/sM7XBxYihq6AAAAcjBwBgkqhkiG9w0BBwagYzBhAgEAMFwGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMxhkBj0s884GBdH4AAgEQgC8vqq72W2F3mNSb7oupGIgm1RnDO5PZvp4ugDGkI7tsN0+4a0DATZQOYnYUDmYSkg==" }}"
-P_ROOT="{{ decrypt "AQICAHhGhwWaL8vVrUnwqYkZd/cMaHaWzqyjn0L7eotBenOeSAElLXf1Ui4RxrB1ndG9mW/4AAAAcjBwBgkqhkiG9w0BBwagYzBhAgEAMFwGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMg7PWstXN8y9BZKtOAgEQgC91LZ6NDyqgPHsSN2jqOLot+aNkj/WAMZMtZuVDrHZ+DgGcI2MantPa09YhpzMMsg==" }}"
+P="ctf"
+P_ROOT="root"
 
 # Default values
 MODE="dev"
